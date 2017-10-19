@@ -54,4 +54,7 @@ def run_cmd(command_str, returncode=40000):
 
 
 if __name__ == '__main__':
+    ## run scuessfuly command
     print run_cmd('/bin/ls -ls|grep zfs*')
+    ## run failed command
+    print run_cmd('/bin/hahah -ls|grep zfs*')
